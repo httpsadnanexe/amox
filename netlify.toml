@@ -4,3 +4,10 @@ publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
+
+# Add the redirect rules below:
+[[redirects]]
+  from = "/*"
+  to = "https://amox.vercel.app/:splat"
+  status = 301
+  force = true
